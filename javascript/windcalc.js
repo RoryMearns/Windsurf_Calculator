@@ -1,18 +1,24 @@
+/* JavaScript/jQuery for windsurf calculator website */
 
+var weightKG = 85;
+var alpha = 2.20462262185;
 
+/* --- Function to update the DOM --- */
 
-/* Form submit on enter? (below) or just have a form auto draw with update on change jQuery .change()  */
-function submitenter (myfield,e) {
-	var keycode;
-	if (window.event) keycode = window.event.keyCode;
-	else if (e) keycode = e.which;
-	else return true;
+function update() {
+  $('#weight_lb').val((weightKG * alpha).toFixed(0));
+  $('#weight_kg').val(weightKG.toFixed(0));
+};
 
-	if (keycode == 13) {
-		myfield.form.submit();
-		return false;
-	}
-	else {
-		return true;
-	}
-}
+/* --- Function to listen for changes --- */
+
+$(document).ready(function() {
+  $("#weight_kg").change(function() {
+    weightKG = $("#weight_kg").val();
+    update();
+  });
+  $("#weight_lb").change(function() {
+    weightKG = $("#weight_lb").val() / alpha;
+    update();
+  });
+});

@@ -1,0 +1,65 @@
+body {
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-size: 4rem;
+  color: gray;
+}
+
+/* --- Heading Styles --- */
+
+h3 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-align: center;
+  font-size: 0.9rem;
+  margin-bottom: 5px;
+}
+
+h3:before,
+h3:after {
+  background-color: #ddd;
+  content: '\a0';
+  flex-grow: 1;
+  height: 1px;
+  position: relative;
+  top: 0.5em;
+}
+
+h3:before {
+  margin-right: 10px;
+}
+
+h3:after {
+  margin-left: 10px;
+}
+
+/* --- Input Styles --- */
+
+input {
+  margin-left: 5px;
+  margin-bottom: 8px;
+  min-width: 10px;
+}
+
+label {
+  margin-right: 10px;
+}
+
+.flex {
+  display: flex;
+  flex-wrap: no-wrap;
+  justify-content: space-between;
+}
+
+#weight {
+  display: block;
+  max-width: 400px;
+  width: 70%;
+  margin: 40px auto;
+}
+
+input {
+  flex-grow: 1;
+  text-align: center;
+  font-size: 3.5rem;
+}
