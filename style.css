@@ -22,7 +22,7 @@ h3:after {
   flex-grow: 1;
   height: 1px;
   position: relative;
-  top: 0.5em;
+  top: 0.6rem;
 }
 
 h3:before {
