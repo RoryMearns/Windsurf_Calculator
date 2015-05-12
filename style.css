@@ -1,7 +1,82 @@
+
 body {
   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-  font-size: 4rem;
-  color: gray;
+  font-size: 2rem;
+  background-color: #212121;
+  color: #C4C4C4;
+}
+
+p {
+  margin: 0;
+  font-size: 1rem;
+}
+
+.buttons p {
+  min-width: 10%
+}
+
+#size_chart p {
+  margin: 0;
+  font-size: 1.3rem;
+  min-width: 40px
+}
+
+.container {
+  display: block;
+  max-width: 400px;
+  width: 70%;
+  margin: 40px auto;
+}
+
+/* --- The Switch --- */
+.flex {
+  display: flex;
+  flex-wrap: no-wrap;
+  justify-content: space-around;
+  align-items: baseline;
+}
+
+.selected {
+  color: #C4C4C4;
+  border: 1px solid #C4C4C4;
+}
+
+.not_selected {
+  color: #444;
+  border: 1px solid #2e2e2e;
+}
+
+a {
+  cursor: pointer;
+  padding: 2px 0;
+  background-color: inherit;
+  flex-grow: 1;
+  font-size: 1rem;
+  text-align: center;
+  border-radius: 7px;
+  margin-left: 10px;
+  margin-top: 4px;
+  width: 45%;
+}
+
+
+
+input {
+  margin-left: 5px;
+  margin-bottom: 8px;
+  min-width: 10px;
+  flex-grow: 1;
+  text-align: center;
+  font-size: 1.6rem;
+  background-color: #C4C4C4;
+  color: #333333;
+  border: none;
+}
+
+label {
+  font-size: 1.8rem;
+  margin-right: 10px;
+  width: 40px;
 }
 
 /* --- Heading Styles --- */
@@ -10,14 +85,27 @@ h3 {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  text-align: center;
   font-size: 0.9rem;
+  font-weight: 300;
   margin-bottom: 5px;
 }
 
+h4 {
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin: 0;
+
+}
+
+.skinny {
+  font-weight: 100;
+  color: #E23C03;
+}
+
+
 h3:before,
 h3:after {
-  background-color: #ddd;
+  background-color: #666;
   content: '\a0';
   flex-grow: 1;
   height: 1px;
@@ -33,33 +121,4 @@ h3:after {
   margin-left: 10px;
 }
 
-/* --- Input Styles --- */
 
-input {
-  margin-left: 5px;
-  margin-bottom: 8px;
-  min-width: 10px;
-}
-
-label {
-  margin-right: 10px;
-}
-
-.flex {
-  display: flex;
-  flex-wrap: no-wrap;
-  justify-content: space-between;
-}
-
-#weight {
-  display: block;
-  max-width: 400px;
-  width: 70%;
-  margin: 40px auto;
-}
-
-input {
-  flex-grow: 1;
-  text-align: center;
-  font-size: 3.5rem;
-}

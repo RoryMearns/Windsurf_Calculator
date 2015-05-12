@@ -7,20 +7,85 @@
 </head>
 <body>
 
-<div id="weight">
-  <h3>weight</h3>
-  <div class="flex">
-    <label for="weight_kg">kg</label>
-    <input id="weight_kg" type="number" placeholder="kg" value="">
-  </div>
-  <div class="flex">
-    <label for="weight_lb">lb</label>
-    <input id="weight_lb" type="number" placeholder="lb" value="">
-  </div>
-</div>
+  <div class="container">
+    <h3>weight</h3>
+    <div class="flex">
+      <label for="weight_kg">kg</label>
+      <input id="weight_kg" type="number" placeholder="kg" value="">
+    </div>
+    <div class="flex">
+      <label for="weight_lb">lb</label>
+      <input id="weight_lb" type="number" placeholder="lb" value="">
+    </div>
 
-<!-- JavaScript/jQuery links -->
-<script src="javascript/jquery-2.1.4.min.js"></script>
-<script src="javascript/windcalc.js" type="text/javascript"></script>
+    <h3>skill</h3>
+    <div class="flex buttons">
+      <p>skill:</p>
+      <a id="skilled" class="selected">skilled</a>
+      <a id="learner" class="not_selected">learner</a>
+    </div>
+
+    <div class="flex buttons">
+      <p>style:</p>
+      <a id="freeride" class="selected">freeride</a>
+      <a id="wave" class="not_selected">wave</a>
+    </div>
+
+
+    <h3>switch state:</h3>
+    <p id="state">skilled</p>
+    
+    <h3>sail sizes</h3>
+    <div id="size_chart">
+      <div class="flex">
+        <h4>wind<span class="skinny">kn</span></h4> 
+        <h4>sail<span class="skinny">m</span></h4>
+        <h4>fin<span class="skinny">cm</span></h4>
+      </div>
+      <div class="flex">
+        <p></p>
+        <p></p>
+        <p></p>
+      </div>
+      <div class="flex">
+        <p>10</p>
+        <p id="sail10">-</p>
+        <p id="fin10">-</p>
+      </div>
+      <div class="flex">
+        <p>15</p>
+        <p id="sail15">-</p>
+        <p id="fin15">-</p>
+      </div>
+      <div class="flex">
+        <p>20</p>
+        <p id="sail20">-</p>
+        <p id="fin20">-</p>
+      </div>
+      <div class="flex">
+        <p>25</p>
+        <p id="sail25">-</p>
+        <p id="fin25">-</p>
+      </div>
+      <div class="flex">
+        <p>30</p>
+        <p id="sail30">-</p>
+        <p id="fin30">-</p>
+      </div>
+      <div class="flex">
+        <p>35</p>
+        <p id="sail35">-</p>
+        <p id="fin35">-</p>
+      </div>
+    </div>
+
+
+    <h3>fin sizes</h3>
+    <p >fin sizes</p>
+  </div>
+
+  <!-- JavaScript/jQuery links -->
+  <script src="javascript/jquery-2.1.4.min.js"></script>
+  <script src="javascript/windcalc.js" type="text/javascript"></script>
 </body>
 </html>
