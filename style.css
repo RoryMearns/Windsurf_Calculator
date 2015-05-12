@@ -18,7 +18,9 @@ p {
 #size_chart p {
   margin: 0;
   font-size: 1.3rem;
+  font-weight: 300;
   min-width: 40px
+  justify-content: center;
 }
 
 .container {
@@ -59,8 +61,6 @@ a {
   width: 45%;
 }
 
-
-
 input {
   margin-left: 5px;
   margin-bottom: 8px;
@@ -80,7 +80,6 @@ label {
 }
 
 /* --- Heading Styles --- */
-
 h3 {
   display: flex;
   flex-direction: row;
@@ -102,7 +101,6 @@ h4 {
   color: #E23C03;
 }
 
-
 h3:before,
 h3:after {
   background-color: #666;
@@ -120,5 +118,3 @@ h3:before {
 h3:after {
   margin-left: 10px;
 }
-
-
