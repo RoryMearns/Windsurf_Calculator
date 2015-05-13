@@ -11,10 +11,6 @@ p {
   font-size: 1rem;
 }
 
-.buttons p {
-  min-width: 10%
-}
-
 #size_chart p {
   margin: 0;
   font-size: 1.3rem;
@@ -39,7 +35,7 @@ p {
 }
 
 .selected {
-  color: #C4C4C4;
+  color: #A1A1A1;
   border: 1px solid #C4C4C4;
 }
 
@@ -63,21 +59,31 @@ a {
 
 input {
   margin-left: 5px;
+  margin-right: 10px;
   margin-bottom: 8px;
   min-width: 10px;
   flex-grow: 1;
   text-align: center;
-  font-size: 1.6rem;
-  background-color: #C4C4C4;
-  color: #333333;
+  font-size: 1.4rem;
+  font-weight: 200;
+  background-color: inherit;
+  color: #C4C4C4;
   border: none;
+  border-bottom: solid 1px #2e2e2e;
 }
 
-label {
-  font-size: 1.8rem;
-  margin-right: 10px;
-  width: 40px;
+input[type=number] {
+    -moz-appearance:textfield;
 }
+
+input[type=number]::-webkit-outer-spin-button,
+input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+
+
+
 
 /* --- Heading Styles --- */
 h3 {
@@ -86,14 +92,23 @@ h3 {
   justify-content: center;
   font-size: 0.9rem;
   font-weight: 300;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
+  margin-top: 15px;
 }
 
-h4 {
+h4, label {
   font-size: 1.4rem;
   font-weight: 600;
   margin: 0;
+}
 
+.buttons h4 {
+  min-width: 18%;
+}
+
+#size_chart .flex p, #size_chart .flex h4{
+  text-align: center;
+  width: 33.333333333%;
 }
 
 .skinny {
