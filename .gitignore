@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .DS_Store
 .DS_Store?
 ._*
@@ -5,3 +6,6 @@
 .Trashes
 ehthumbs.db
 Thumbs.db 
+=======
+.DS_Store
+>>>>>>> git ignore
