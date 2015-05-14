@@ -26,7 +26,6 @@ p {
   font-size: 1.3rem;
   font-weight: 300;
   min-width: 40px
-  justify-content: center;
 }
 
 .container {
@@ -168,7 +167,6 @@ h4, label {
 h3:before,
 h3:after {
   background-color: #666;
-  opacity: 50%;
   content: '\a0';
   flex-grow: 1;
   height: 1px;
