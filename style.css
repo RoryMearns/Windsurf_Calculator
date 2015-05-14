@@ -74,7 +74,7 @@ img {
 }
 
 #about a {
-  color: #FDDB29;
+  color: #FF9343;
   font-weight: 300;
   text-decoration: none;
 
@@ -117,6 +117,9 @@ input[type=number]::-webkit-inner-spin-button {
   display: none;
 }
 
+.user {
+  color: #FF9343;
+}
 /* --- Heading Styles --- */
 
 h1 {
