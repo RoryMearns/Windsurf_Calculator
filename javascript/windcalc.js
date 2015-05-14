@@ -122,14 +122,7 @@ $(document).ready(function() {
     var self = $(this);
     self.toggleClass("active");
     self.next().slideToggle(350);
-});
-//$('.answer').on('click', function(e) {
-//  e.preventDefault();
-//  $(this).parent().slideUp(350);
-//});
-
-
-
+  });
 
 });
 
