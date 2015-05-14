@@ -116,6 +116,21 @@ $(document).ready(function() {
     customWind3 = $("#custom3").val();
     update();
   });
+
+  $('#aboutlink').on('click', function(e) {
+    e.preventDefault();
+    var self = $(this);
+    self.toggleClass("active");
+    self.next().slideToggle(350);
+});
+//$('.answer').on('click', function(e) {
+//  e.preventDefault();
+//  $(this).parent().slideUp(350);
+//});
+
+
+
+
 });
 
 update();
