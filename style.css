@@ -41,10 +41,18 @@ img {
 
 /* --- The Switch --- */
 .flex {
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: no-wrap;
-  justify-content: space-around;
-  align-items: baseline;
+  -webkit-flex-wrap: no-wrap;
+      -ms-flex-wrap: no-wrap;
+          flex-wrap: no-wrap;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+  -webkit-align-items: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
 }
 
 .selected {
@@ -66,7 +74,9 @@ img {
   cursor: pointer;
   padding: 2px 0;
   background-color: inherit;
-  flex-grow: 1;
+  -webkit-flex-grow: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
   font-size: 1rem;
   text-align: center;
   border-radius: 7px;
@@ -89,7 +99,9 @@ input {
   margin-left: 5px;
   margin-right: 10px;
   min-width: 10px;
-  flex-grow: 1;
+  -webkit-flex-grow: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
   text-align: center;
   font-size: 1.4rem;
   font-weight: 200;
@@ -135,9 +147,15 @@ h2 {
 
 h3 {
   color: #C4C4C4;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-  justify-content: center;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   font-size: 1.1rem;
   font-weight: 300;
   margin-bottom: 10px;
@@ -168,7 +186,9 @@ h3:before,
 h3:after {
   background-color: #666;
   content: '\a0';
-  flex-grow: 1;
+  -webkit-flex-grow: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
   height: 1px;
   position: relative;
   top: 0.6rem;
