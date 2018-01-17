@@ -1,5 +1,5 @@
 # Windsurf Calculator
-Side-project for fun and practice. See the published site at [windsurfcalc.com](http://windsurfcalc.com/) (domain name has lapsed, will be back in a day or so)
+Side-project for fun and practice. See the published site at [windsurfcalc.com](http://windsurfcalc.com/)
 
 I built this small website with the intention that I would use it myself! It's a basic tool for windsurfers that calculates sail size based on rider weight and windspeed. This kind of tool is not uncommon on the web but all of them are clunky and none of them are mobile friendly. 
 
